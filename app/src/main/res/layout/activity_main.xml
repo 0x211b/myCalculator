@@ -9,11 +9,61 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:gravity="end|bottom"
         android:layout_height="250dp"
-        android:text="Hello World!"
+        android:background="@color/light_gray"
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:text="@string/txtDisplay"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btnSeven"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="@string/seven" />
+        <Button
+            android:id="@+id/btnEight"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="@string/eight"
+            />
+        <Button
+            android:id="@+id/btnNine"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="@string/nine"
+            />
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="@string/divide"
+            />
+
+
+    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
